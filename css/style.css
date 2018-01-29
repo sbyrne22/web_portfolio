@@ -1,24 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Muli|Open+Sans+Condensed:300|Shadows+Into+Light');
+
+/* font-family: 'Dosis', sans-serif; */
+/* font-family: 'Shadows Into Light', cursive; */
+/* font-family: 'Muli', sans-serif; */
+/* font-family: 'Open Sans Condensed', sans-serif; */
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
 body {
   /* background: pink; */
   margin: 0;
   /* border: 2px solid black; */
 }
-header {
-  text-align: center;
+main {
   width: 100%;
   max-width: 1023px;
-  margin: 30px auto;
-  /* transform: translate(-50%, 0); */
-  /* background: blue; */
-  border: 2px solid blue;
+  box-sizing: border-box;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+header {
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
+  color: #FFFFFF;
+  width: 100%;
+  max-width: 1023px;
+  text-align: center;
+  margin: 30px auto 0 auto;
+  border-bottom: 2px solid rgba(220, 50, 50, 1);
   height: 40vh;
   min-height: 280px;
-  padding: 5px 2%;
+  padding: 110px 2%;
   box-sizing: border-box;
+  /* transform: translate(-50%, 0); */
+  /* background: blue; */
+  background-image: url("./imgs/spiration dark.png");
 }
 nav {
+  font-family: 'Muli', sans-serif;
   transform: translate(-50%, 0);
-  background: rgba(100, 100, 100, 0.5);
+  background: /*orange*/ rgba(255, 255, 255, 0.9);
   position: fixed;
   top: 0;
   left: 50%;
@@ -26,18 +53,29 @@ nav {
   height: 30px;
   max-width: 1023px;
   margin: 0 auto;
-  padding: 5px 2%;
+  padding: 0px 1px 0 0;
   box-sizing: border-box;
+}
+section {
+  font-family: 'Dosis', sans-serif;
+  padding: 5px 2%;
+  /* margin: 0 auto; */
+  /* border: 1px solid purple; */
+}
+footer {
+  color: #FFFFFF;
+  background: black;
+  padding: 5px 2%;
 }
 .imgCircle {
   width: 100px;
   height: 100px;
   border-radius: 100%;
   background: blue;
-  margin: 0 auto;
-  position: absolute;
-  left: 45%;
-  top: 38vh;
+  /* margin: 0 auto; */
+  /* position: absolute; */
+  /* left: 45%; */
+  /* top: 38vh; */
 }
 .flexSB {
   display: flex;
@@ -49,5 +87,89 @@ nav {
   max-width: 800px;
 }
 .item {
-  margin-left: 15px;
+  height: 30px;
+  padding: 4px 10px;
+  box-sizing: border-box;
+  /* margin-left: 15px; */
+}
+.item:hover {
+  cursor: pointer;
+  background: rgba(150, 150, 150, .9);
+}
+
+.heading {
+  text-align: center;
+  margin: 0 auto 50px auto;
+}
+.projCard {
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+  background: rgba(150, 150, 150, .5);
+  box-sizing: border-box;
+  border-top: 1px solid #111111;
+  border-bottom: 1px solid #111111;
+  /* border-radius: 20px; */
+}
+.about {
+  background: linear-gradient(to bottom, rgba(200, 200, 200, .7), rgba(200, 200, 200, .0));
+}
+.skills {
+
+}
+.skill {
+  font-size: 15px;
+  text-align: center;
+  background: rgba(50, 220, 50, .4);
+  width: 100px;
+}
+.skillPack {
+  margin-top: 10px;
+}
+.skillBar {
+  margin: 2px 0 0 0px;
+  height: 15px;
+  width: 250px;
+  background: rgba(150, 150, 150 ,.5);
+}
+.barFill {
+  background: rgba(50, 220, 50, .7);
+  height: 15px;
+  width: 50%;
+}
+.brandStatement {
+  line-height: 30px;
+  margin-top: 40px;
+  max-width: 350px;
+  /* background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
+}
+
+/* id's ------------------------------------ */
+
+#html {
+  width: 90%;
+}
+#css {
+  width: 85%;
+}
+#javaScript {
+  width: 80%;
+}
+#jQuery {
+  width: 80%;
+}
+#node {
+  width: 65%;
+}
+#angular {
+  width: 75%;
+}
+#ruby {
+  width: 70%;
+}
+#postgreSQL {
+  width: 60%;
+}
+#mongoDB {
+  width: 55%;
 }

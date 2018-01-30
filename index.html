@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Sean Byrne</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="./js/app.js"></script>
+
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <nav class="flexSB">
       <div class="item"><a href="#top">Sean Byrne</a></div>
-
-      <div class="flexSB items">
-        <div class="item"><a href="#about">About</a></div>
-        <div class="item"><a href="#portfolio">Portfolio</a></div>
-        <div class="item"><a href="#">Inspirations</a></div>
-        <div class="item"><a href="#">Contact</a></div>
-
+      <div class="burger item">
+        <i class="material-icons">view_headline</i>
+      </div>
+      <div class="closeheaderBtn item">
+        <i class="material-icons">clear</i>
       </div>
 
+      <div class="flexSB items">
+        <a class="item" href="#about">About</a>
+        <a class="item" href="#portfolio">Portfolio</a>
+        <a class="item" href="#">Inspirations</a>
+        <a class="item" href="#contact">Contact</a>
+      </div>
+      <div class="mobileLinks">
+        <a class="item" href="#about">About</a>
+        <a class="item" href="#portfolio">Portfolio</a>
+        <a class="item" href="#">Inspirations</a>
+        <a class="item" href="#contact">Contact</a>
+
+      </div>
     </nav>
     <a id="top">
     <header>
@@ -25,9 +46,10 @@
       <!-- <div class="imgCircle"></div> -->
     </header>
     <main>
-      <section  class="about"><a id="about"></a>
-        <h2 class="heading">About</h2>
-        <div class="flexSB">
+      <a id="about"></a>
+      <section  class="about">
+        <p class="heading">About</p>
+        <div class="flexSB aboutMediaQry">
           <div class="brandStatement">
             I'm a General Assembly coding bootcamp graduate. My skillset covers the full stack  but my passion lies in connecting front-end design and back-end infrastructure. I enjoy developing in Javascript, Angular.js being my favorite and most proficient language.
             <!-- <div class="imgCircle"></div> -->
@@ -74,19 +96,79 @@
           </div>
         </div>
       </section>
-      <section class="portfolio"><a id="portfolio"></a>
-        <h2 class="heading">Projects</h2>
-        <div class="flexSB">
-          <div class="projCard"></div>
-          <div class="projCard"></div>
-          <div class="projCard"></div>
-          <div class="projCard"></div>
+      <a id="portfolio"></a>
+      <section class="portfolio">
+        <p class="heading">Projects</p>
+        <div class="projects">
+          <div class="flexProjects">
+            <div class="projBox">
+              <div class="projName">Tic Tac Toes</div>
+              <div class="">
+                <div class="projInfo">
+                  Languages: <br>
+                  HTML, CSS, jQuery <br><br>
+                  Description: <br>
+                  Tic Tac Toes is a jQuery based game that consists of 9 tic tac toe boards whixh will be fought for in order to win 3 boards in a row. Click the live link to find out more and give it a play, or check out my github to take a look behind the scenes
+                  <div class="btns">
+                    <div class="btn">Live</div>
+                    <div class="btn">GitHub</div>
+                  </div>
+                </div>
+                <div id="tic_tac_toes" class="projCard"></div>
+              </div>
+            </div>
+            <div class="projBox">
+              <div class="projName">Appitite</div>
+              <div class="">
+                <div class="projInfo"></div>
+                <div id="appitite" class="projCard"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flexProjects">
+            <div class="projBox">
+              <div class="projName">Quip Pro Quo</div>
+              <div class="">
+                <div class="projInfo"></div>
+                <div id="quip_pro_quo" class="projCard"></div>
+              </div>
+            </div>
+            <div class="projBox">
+              <div class="projName">XCursion</div>
+              <div class="">
+                <div class="projInfo"></div>
+                <div id="xcursion" class="projCard"></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+      <a id="contact"></a>
+      <section class="contact">
+        <p class="heading">Contact</p>
+
+        <form method="post" action="index.php">
+          <label>Name</label>
+          <input name="name" placeholder="Type Here">
+
+          <label>Email</label>
+          <input name="email" type="email" placeholder="Type Here">
+
+          <label>Message</label>
+          <textarea name="message" placeholder="Type Here"></textarea>
+
+          <label>*What is 2+2? (Anti-spam)</label>
+          <input name="human" placeholder="Type Here">
+
+          <input id="submit" name="submit" type="submit" value="Submit">
+
+        </form>
+
       </section>
 
     </main>
 
-    <footer>
+    <!-- <footer>
       <h1>Footer</h1>
 
       <div class="socialLinks">
@@ -94,7 +176,7 @@
         <div class="link">Github</div>
       </div>
       <p>Sean Byrne 2018</p>
-    </footer>
+    </footer> -->
 
   </body>
 </html>

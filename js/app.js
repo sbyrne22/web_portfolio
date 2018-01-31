@@ -7,51 +7,51 @@ const $headerBtn = $('.burger');
 const $closeheaderBtn = $('.closeheaderBtn');
 const $mobileLink = $('.mobileLinks');
 
-const $ticTacToes = $('#tic_tac_toes');
 const $tictacToesInfo = $('#ticInfo');
+const $ticHover = $('#ticHover');
 
-const $appitite = $('#appitite');
 const $appititeInfo = $('#appititeInfo');
+const $appititeHover = $('#appititeHover');
 
-const $quip_pro_quo = $('#quip_pro_quo');
 const $quipInfo = $('#quipInfo');
+const $quipHover = $('#quipHover');
 
-const $xcursion = $('#xcursion');
 const $xcursionInfo = $('#xcursionInfo');
+const $xcursionHover = $('#xcursionHover');
 
 // tic_tac_toes
-$ticTacToes.on( "mouseover", () => {
+$ticHover.on( "mouseover", () => {
   $('#ticInfo').fadeIn( 500 );
 });
 
-$tictacToesInfo.on( "mouseout", () => {
+$ticHover.on( "mouseout", () => {
   $('#ticInfo').fadeOut( 400 );
 });
 
 // Appitite
-$appitite.on( "mouseover", () => {
+$appititeHover.on( "mouseover", () => {
   $('#appititeInfo').fadeIn( 500 );
 });
 
-$appititeInfo.on( "mouseout", () => {
+$appititeHover.on( "mouseout", () => {
   $('#appititeInfo').fadeOut( 400 );
 });
 
 // quip_pro_quo
-$quip_pro_quo.on( "mouseover", () => {
+$quipHover.on( "mouseover", () => {
   $('#quipInfo').fadeIn( 500 );
 });
 
-$quipInfo.on( "mouseout", () => {
+$quipHover.on( "mouseout", () => {
   $('#quipInfo').fadeOut( 400 );
 });
 
 // xcursion
-$xcursion.on( "mouseover", () => {
+$xcursionHover.on( "mouseover", () => {
   $('#xcursionInfo').fadeIn( 500 );
 });
 
-$xcursionInfo.on( "mouseout", () => {
+$xcursionHover.on( "mouseout", () => {
   $('#xcursionInfo').fadeOut( 400 );
 })
 

@@ -4,6 +4,7 @@
     <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Sean Byrne</title>
+    <link rel="icon" type="image/png" href="./imgs/profpic.png">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script
@@ -27,33 +28,36 @@
 
       <div class="flexSB items">
         <a class="item" href="#about">About</a>
-        <a class="item" href="#portfolio">Portfolio</a>
-        <a class="item" href="#">Inspirations</a>
+        <a class="item" href="#projects">Projects</a>
         <a class="item" href="#contact">Contact</a>
+        <a class="item" href="https://standardresume.co/seanbyrne" target="_blank">Resume</a>
       </div>
       <div class="mobileLinks">
         <a class="item" href="#about">About</a>
-        <a class="item" href="#portfolio">Portfolio</a>
-        <a class="item" href="#">Inspirations</a>
+        <a class="item" href="#projects">Projects</a>
         <a class="item" href="#contact">Contact</a>
+        <a class="item" href="https://standardresume.co/seanbyrne" target="_blank">Resume</a>
 
       </div>
     </nav>
-    <a id="top">
+    <a id="top"></a>
     <header>
-      <h3>Welcome to Sean</h3>
-      <h5>A Junior Developer and GA Graduate</h5>
-      <!-- <div class="imgCircle"></div> -->
+
+        <h3>Welcome to Sean</h3>
+        <h5>A Junior Developer and GA Graduate</h5>
+
+      <div class="socialLinks">
+        <a href="https://github.com/sbyrne22" target="_blank"><img src="./imgs/GitHub-Mark-light-32px.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/sean-m-byrne/" target="_blank"><img src="./imgs/In-2C-34px-R.png" alt=""> </a>
+      </div>
     </header>
     <main>
       <a id="about"></a>
       <section class="about">
         <p class="heading">About</p>
         <div class="flexSB aboutMediaQry">
-          <div class="brandStatement">
-            I'm a General Assembly coding bootcamp graduate. My skillset covers the full stack  but my passion lies in connecting front-end design and back-end infrastructure. I enjoy developing in Javascript, Angular.js being my favorite and most proficient language.
-            <!-- <div class="imgCircle"></div> -->
-          </div>
+
+
           <div class="skills">
             <div class="skillPack flexSB">
               <div class="skill">HTML</div>
@@ -94,21 +98,32 @@
               <div class="skillBar"><div id="mongoDB" class="barFill"></div></div>
             </div>
           </div>
+          <div class="imgCircle"></div>
+        </div>
+        <div class="brandStatement">
+          I'm a General Assembly coding bootcamp graduate. My skillset covers the full stack  but my passion lies in connecting front-end design and back-end infrastructure. I enjoy developing in Javascript, being it's my favorite and most proficient language.
         </div>
       </section>
-      <a id="portfolio"></a>
-      <section class="portfolio">
+      <a id="projects"></a>
+      <section>
         <p class="heading">Projects</p>
         <div class="projects">
           <div class="flexProjects">
             <div class="projBox">
               <div class="projName">Tic Tac Toes</div>
               <div class="">
+                <div id="ticHover" class="projHover"></div>
                 <div id="ticInfo" class="projInfo">
-                  Languages: <br>
-                  HTML, CSS, jQuery <br><br>
-                  Description: <br>
-                  Tic Tac Toes is a jQuery based game that consists of 9 tic tac toe boards whixh will be fought for in order to win 3 boards in a row. Click the live link to find out more and give it a play, or check out my github to take a look behind the scenes
+
+                  <div class="infoLanguages">
+                    <div class="infoHeading">Languages:</div>
+                    HTML • CSS • jQuery </div>
+
+                  <div class="infoContent">
+                    <div class="infoHeading">Description:</div>
+                    Tic Tac Toes is a jQuery based game that consists of 9 tic tac toe boards whixh will be fought for in order to win 3 boards in a row. Click the live link to find out more and give it a play, or check out my github to take a look behind the scenes.
+                  </div>
+
                 </div>
                 <div id="tic_tac_toes" class="projCard"></div>
               </div>
@@ -120,11 +135,16 @@
             <div class="projBox">
               <div class="projName">Appitite</div>
               <div class="">
+                <div id="appititeHover" class="projHover"></div>
                 <div id="appititeInfo" class="projInfo">
-                  Languages: <br>
-                  HTML, CSS, jQuery <br><br>
-                  Description: <br>
-                  Tic Tac Toes is a jQuery based game that consists of 9 tic tac toe boards whixh will be fought for in order to win 3 boards in a row. Click the live link to find out more and give it a play, or check out my github to take a look behind the scenes
+                  <div class="infoLanguages">
+                    <div class="infoHeading">Languages:</div>
+                    HTML • CSS • jQuery • Ejs • MongoDB • Node • Express </div>
+
+                  <div class="infoContent">
+                    <div class="infoHeading">Description:</div>
+                    Appitite is a Web app where users can view and create recipes to share with the world.
+                  </div>
                 </div>
                 <div id="appitite" class="projCard"></div>
               </div>
@@ -138,11 +158,16 @@
             <div class="projBox">
               <div class="projName">Quip Pro Quo</div>
               <div class="">
+                <div id="quipHover" class="projHover"></div>
                 <div id="quipInfo" class="projInfo">
-                  Languages: <br>
-                  HTML, CSS, jQuery <br><br>
-                  Description: <br>
-                  Tic Tac Toes is a jQuery based game that consists of 9 tic tac toe boards whixh will be fought for in order to win 3 boards in a row. Click the live link to find out more and give it a play, or check out my github to take a look behind the scenes
+                  <div class="infoLanguages">
+                    <div class="infoHeading">Languages:</div>
+                    HTML • CSS • Angular.js • Ruby/Rails • Node </div>
+
+                  <div class="infoContent">
+                    <div class="infoHeading">Description:</div>
+                    Quip Pro Quo is a web app where user answer the questions with the funniest answer they can think of, as well as 'like' other users' answers. This was a group project where I was in charge of the CSS and UI and UE, and helped pair program the back-end and user authentication.
+                  </div>
                 </div>
                 <div id="quip_pro_quo" class="projCard"></div>
               </div>
@@ -154,11 +179,15 @@
             <div class="projBox">
               <div class="projName">XCursion</div>
               <div class="">
+                <div id="xcursionHover" class="projHover"></div>
                 <div id="xcursionInfo" class="projInfo">
-                  Languages: <br>
-                  HTML, CSS, jQuery <br><br>
-                  Description: <br>
-                  Tic Tac Toes is a jQuery based game that consists of 9 tic tac toe boards whixh will be fought for in order to win 3 boards in a row. Click the live link to find out more and give it a play, or check out my github to take a look behind the scenes
+                  <div class="infoLanguages">
+                    <div class="infoHeading">Languages:</div>
+                    HTML • CSS • jQuery • Angular.js • MongoDB • Node • Express </div>
+                  <div class="infoContent">
+                    <div class="infoHeading">Description:</div>
+                    XCursion is a web app where users' can add places they've been to and want to, to one of the two lists ('been to' and 'want to'). This was a group project where I was in charge of the styling and UI except for the forms.
+                  </div>
                 </div>
                 <div id="xcursion" class="projCard"></div>
               </div>
@@ -174,7 +203,7 @@
       <section class="contact">
         <p class="heading">Contact</p>
 
-        <form method="post" action="https://formspree.io/seanbyrne.dev@gmail.com">
+        <form method="post" action="https://formspree.io/seanbyrne.dev@gmail.com" target="_blank">
           <label>Name</label>
           <input name="name" placeholder="Type Here">
 
@@ -184,11 +213,7 @@
           <label>Message</label>
           <textarea name="message" placeholder="Type Here"></textarea>
 
-          <label>*What is 2+2? (Anti-spam)</label>
-          <input name="human" placeholder="Type Here">
-
           <input id="submit" name="submit" type="submit" value="Submit">
-
         </form>
 
       </section>

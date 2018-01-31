@@ -14,17 +14,13 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-  /* background: pink; */
   margin: 0 auto;
-  /* border: 2px solid black; */
 }
 main {
   width: 100%;
   max-width: 1023px;
   box-sizing: border-box;
   margin: 0 auto;
-  /* border: 1px solid red; */
-  /* background: linear-gradient(to bottom, rgba(200, 200, 200, .7), rgba(200, 200, 200, .0)); */
 }
 header {
   font-family: 'Dosis', sans-serif;
@@ -34,15 +30,12 @@ header {
   max-width: 1023px;
   text-align: center;
   margin: 30px auto 0 auto;
-  border-bottom: 2px solid rgba(220, 50, 50, 1);
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
   height: 100vh;
   min-height: 280px;
-  /* max-height: 600px; */
   padding: 40vh 2%;
   box-sizing: border-box;
-  /* transform: translate(-50%, 0); */
-  /* background: rgba(220, 50, 50, 1); */
-  background-image: url("./imgs/spiration dark.png");
+  background-image: url("../imgs/spiration dark.png");
 }
 nav {
   font-family: 'Muli', sans-serif;
@@ -60,29 +53,37 @@ nav {
   box-sizing: border-box;
 }
 section {
-  /* width: 100%; */
   font-family: 'Dosis', sans-serif;
   padding: 5px 2%;
-  /* margin: 0 auto; */
-  /* border: 1px solid purple; */
-  /* height: 100vh; */
-  min-height: 750px;
-  /* height: 500px; */
+  /* min-height: 750px; */
 }
 footer {
   color: #FFFFFF;
   background: black;
   padding: 5px 2%;
 }
-.imgCircle {
-  width: 100px;
-  height: 100px;
+.socialLinks {
+  margin-top: 20px;
+}
+.socialLinks > a {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.imgIcon {
+  width: 25px;
   border-radius: 100%;
-  background: blue;
-  /* margin: 0 auto; */
-  /* position: absolute; */
-  /* left: 45%; */
-  /* top: 38vh; */
+}
+.imgCircle {
+  width: 250px;
+  margin-top: 30px;
+  border-radius: 100%;
+  border: 5px solid #000000;
+  box-sizing: border-box;
+  background-image: url("../imgs/profpic.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(250, 250, 250 , .1)));
 }
 .flexSB {
   display: flex;
@@ -93,7 +94,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* border: 1px solid purple; */
 }
 
 .items {
@@ -103,7 +103,6 @@ footer {
   height: 30px;
   padding: 4px 10px;
   box-sizing: border-box;
-  /* margin-left: 15px; */
 }
 .item:hover {
   cursor: pointer;
@@ -114,11 +113,9 @@ footer {
   font-size: 40px;
   text-align: center;
   text-decoration: underline;
-  /* margin: 0 auto 50px auto; */
   margin: 30px auto 5vh auto;
 }
 .projects {
-  /* margin-top: 80px; */
   flex-wrap: wrap;
 }
 .projBox {
@@ -139,6 +136,7 @@ footer {
   color: #FFFFFF;
 }
 .projInfo {
+  text-align: left;
   display: none;
   background: rgba(255, 255, 255, 0.9);
   position: absolute;
@@ -146,12 +144,10 @@ footer {
   width: 250px;
   height: 250px;
   box-sizing: border-box;
-  /* border: 1px solid purple; */
   -moz-border-radius:1px;
   -webkit-border-radius:1px;
   border-radius:1px;
   padding: 5px;
-  /* -webkit-box-reflect: below 35px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(200, 200, 200 , .1))); */
 }
 .projCard {
   width: 250px;
@@ -159,25 +155,28 @@ footer {
   -moz-border-radius:1px;
   -webkit-border-radius:1px;
   border-radius:1px;
-  /* margin: 5px 0; */
   background: rgba(150, 150, 150, .5);
   box-sizing: border-box;
-  /* border-top: 1px solid #111111; */
-  /* border-bottom: 1px solid #111111; */
-  /* border-radius: 20px; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* -webkit-box-reflect: below 0px; */
-  /* -webkit-box-reflect: below 2px linear-gradient(transparent, rgba(200, 200, 200 , .1)); */
-
-  /* -webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(200, 200, 200 , .1))); */
-
+}
+.projHover {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  z-index: 10;
 }
 .infoHeading {
   font-size: 20px;
-  background: orange;
-  margin: 0 5px 5px 0;
+  margin: 0 5px 2px 0;
+}
+.infoLanguages {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.infoContent {
+  font-size: 15px;
 }
 .btns {
   display: flex;
@@ -203,10 +202,11 @@ footer {
   color: #FFFFFF;
 }
 .about {
-  background: linear-gradient(to bottom, rgba(200, 200, 200, .7), rgba(200, 200, 200, .0));
+  /* background: linear-gradient(to bottom, rgba(200, 200, 200, .7), rgba(200, 200, 200, .0)); */
 }
 .skills {
-
+  margin-top: 30px;
+  -webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(250, 250, 250 , .1)));
 }
 .skill {
   font-size: 15px;
@@ -229,9 +229,12 @@ footer {
   width: 50%;
 }
 .brandStatement {
-  line-height: 30px;
-  margin-top: 40px;
-  max-width: 350px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 50px;
+  /* margin-top: 40px; */
+  margin: 50px auto;
+  /* max-width: 50px; */
   /* background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
 }
 .closeheaderBtn {
@@ -285,16 +288,16 @@ footer {
 /* ------------------ */
 
 #tic_tac_toes {
-  background-image: url("./imgs/project_photos/tic_tac_toes.png");
+  background-image: url("../imgs/project_photos/tic_tac_toes.png");
 }
 #quip_pro_quo {
-  background-image: url("./imgs/project_photos/quip_pro_quo.png");
+  background-image: url("../imgs/project_photos/quip_pro_quo.png");
 }
 #appitite {
-  background-image: url("./imgs/project_photos/appitite.png");
+  background-image: url("../imgs/project_photos/appitite.png");
 }
 #xcursion {
-  background-image: url("./imgs/project_photos/xcursion.png");
+  background-image: url("../imgs/project_photos/xcursion.png");
 }
 
 /* Form --------------- */
@@ -343,6 +346,13 @@ input:focus, textarea:focus {
 
 /* ------------- Media Queries ------------- */
 @media (max-width: 750px) {
+  .imgCircle {
+    margin: 60px auto 0 auto;
+  }
+  .brandStatement {
+    font-size: 20px;
+    line-height: 40px;
+  }
   .about {
     text-align: center;
   }

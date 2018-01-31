@@ -74,9 +74,11 @@ $xcursionHover.on( "mouseout", () => {
     $('.closeheaderBtn').css('display', 'none');
   });
   $homeBtn.on('click', () => {
-    $('.mobileLinks').css('display', 'none');
-    $('.burger').css('display', 'inline-block');
-    $('.closeheaderBtn').css('display', 'none');
+    if ($(window).width() < 735) {
+      $('.mobileLinks').css('display', 'none');
+      $('.burger').css('display', 'inline-block');
+      $('.closeheaderBtn').css('display', 'none');
+    }
   });
 
 $(window).on('resize', () => {

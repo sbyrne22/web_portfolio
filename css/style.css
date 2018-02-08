@@ -112,7 +112,7 @@ footer {
 .heading {
   font-size: 40px;
   text-align: center;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   margin: 30px auto 5vh auto;
 }
 .projects {
@@ -204,10 +204,13 @@ footer {
   -webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(250, 250, 250 , .1)));
 }
 .skill {
-  font-size: 15px;
+  text-transform: uppercase;
+  font-size: 13px;
   text-align: center;
   background: rgba(50, 220, 50, .4);
-  width: 100px;
+  width: 80px;
+  padding: 2px;
+  box-sizing: border-box;
 }
 .skillPack {
   margin-top: 10px;

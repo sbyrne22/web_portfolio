@@ -31,7 +31,7 @@ header {
   text-align: center;
   margin: 30px auto 0 auto;
   border-bottom: 2px solid rgba(255, 255, 255, 1);
-  height: 80vh;
+  height: 100vh;
   min-height: 280px;
   padding: 30vh 2%;
   box-sizing: border-box;
@@ -53,13 +53,17 @@ nav {
   box-sizing: border-box;
 }
 section {
-  font-family: 'Dosis', sans-serif;
-  padding: 5px 2%;
+  /* font-family: 'Dosis', sans-serif; */
+  font-family: 'Muli', sans-serif;
+  padding: 5px 5%;
 }
 footer {
   color: #FFFFFF;
   background: black;
   padding: 5px 2%;
+}
+.about {
+  margin-bottom: 100px;
 }
 .contactModel {
   display: none;
@@ -125,7 +129,7 @@ footer {
   flex-direction: row-reverse;
   justify-content: space-between;
   /* border: 1px solid red; */
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 .flexProjects {
   display: flex;
@@ -150,8 +154,9 @@ footer {
   font-size: 40px;
   text-align: center;
   /* text-decoration: underline; */
-  margin: 30px auto 5vh auto;
+  margin: 30px auto 100px auto;
 }
+
 .project {
   /* display: flex;
   justify-content: space-between; */
@@ -161,7 +166,16 @@ footer {
   border: 2px solid #CCCCCC;
   width: 80%;
 }
+.projTitleBox {
+  align-items: center;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 3px solid rgba(247, 159, 8 ,1);
+}
 .projTitle {
+  /* border: 1px solid black; */
   font-family: 'Dosis', sans-serif;
   /* font-family: 'Shadows Into Light', cursive; */
   /* font-family: 'Muli', sans-serif; */
@@ -169,10 +183,13 @@ footer {
   /* display: inline-block; */
   font-size: 30px;
   margin-bottom: 10px;
-  background: linear-gradient(to right, rgba(247, 159, 8 ,1) ,rgba(255, 255, 255 ,.5));
+  margin-right: 10px;
+  /* border-top: 3px solid rgba(133, 246, 248 ,1); */
+  /* border-top: 3px solid rgba(247, 159, 8 ,1); */
+  /* background: linear-gradient(to right, rgba(247, 159, 8 ,1) ,rgba(255, 255, 255 ,.5)); */
 }
 .projDesc {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 33px;
   /* border: 1px solid purple; */
   max-width: 400px;
@@ -267,6 +284,7 @@ footer {
   /* border-right: 1px solid #000000; */
   /* border-radius: 0 0 0 9px; */
   overflow: hidden;
+  -webkit-box-reflect: below 5px -webkit-gradient(linear, right top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(250, 250, 250 , .1)));
 }
 .projImg > img {
   max-width: 300px;
@@ -329,35 +347,43 @@ footer {
   font-size: 15px;
 }
 .btns {
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* justify-content: space-between; */
+  font-family: 'Dosis', sans-serif;
   /* margin: 0 auto; */
-  /* height: 20px; */
-  /* width: 250px; */
-  /* background: rgba(50, 50, 50, .9); */
-  /* border-radius: 10px; */
-  /* box-sizing: border-box; */
+  /* width: 170px; */
+  margin-bottom: 7px;
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  text-align: center;
 }
 .btn {
-  display: inline-block;
   color: #FFFFFF;
   text-align: center;
-  width: 70px;
-  height: 28px;
-  /* margin: 0 2px 0 2px; */
-  /* border: 1px solid black; */
+  /* width: 70px;
+  height: 28px; */
+
+  width: 50px;
+  height: 18px;
+  font-size: 12px;
   cursor: pointer;
-  /* border: 1px solid red; */
-  /* border-top: 1px solid #000000; */
+  padding-top: 1px;
   background: #CCCCCC;
   box-sizing: border-box;
+  box-shadow: 0px 2px 2px 0px rgba(100, 100, 100, 1), 0 4px 8px 0 rgba(100, 100, 100, 1);
 }
 .btn > a {
-  /* color: #FFFFFF; */
+  color: #FFFFFF;
 }
-.btn:hover {
-  font-size: 17px;
+.live {
+  background: rgba(70, 200, 40, 1);
+}
+.github {
+  background: rgba(150, 150, 150, 1);
+}
+.btn:active {
+  padding-top: 2px;
+  box-shadow: 0px 2px 4px grey;
 }
 .btnLeft {
   border-radius: 8px 0 0 0 ;

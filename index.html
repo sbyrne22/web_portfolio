@@ -29,22 +29,27 @@
       <div class="flexSB items">
         <a class="item" href="#about">About</a>
         <a class="item" href="#projects">Projects</a>
-        <a class="item" href="#contact">Contact</a>
+        <a class="item" id="contactBtn">Contact</a>
         <a class="item" href="https://standardresume.co/seanbyrne" target="_blank">Resume</a>
       </div>
       <div class="mobileLinks">
         <a class="item" href="#about">About</a>
         <a class="item" href="#projects">Projects</a>
-        <a class="item" href="#contact">Contact</a>
+        <a class="item">Contact</a>
         <a class="item" href="https://standardresume.co/seanbyrne" target="_blank">Resume</a>
-
+      </div>
+      <div class="contactModel">
+        <div class="arrow"></div>
+        <div class="contactContent">
+          sbyrne2074@gmail.com <br>
+          (570)-534-5409
+        </div>
       </div>
     </nav>
     <a id="top"></a>
     <header>
-
-        <h3>Welcome to Sean Byrne</h3>
-        <h5>Junior Developer and GA Graduate</h5>
+      <h3>Welcome to Sean Byrne</h3>
+      <h5>Full-Stack Developer</h5>
 
       <div class="socialLinks">
         <a href="https://github.com/sbyrne22" target="_blank"><img src="./imgs/GitHubLight-32px.png" alt="GitHub"></a>
@@ -59,9 +64,9 @@
       <section class="about">
         <p class="heading">About</p>
         <div class="flexSBR aboutMediaQry">
-          <div class="imgCircle"></div>
+          <div class="imgCircle slideIn"></div>
           <div class="textBox">
-            I'm a General Assembly coding bootcamp graduate. My skillset covers the full stack  but my passion lies in connecting front-end design and back-end infrastructure. I enjoy developing in Javascript, being it's my favorite and most proficient language.
+            I am a web developer and strategic problem solver. I love learning and implementing new technologies. My passion lies in front-end development and connecting front-end design and back-end infrastructure.
           </div>
         </div>
 
@@ -124,7 +129,7 @@
             </div>
           </div>
           <div class="textBox">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            My skillset covers the full stack I enjoy developing in Javascript, being it's my favorite and most proficient language.
           </div>
         </div>
 
@@ -132,10 +137,52 @@
       <a id="projects"></a>
       <section>
         <p class="heading">Projects</p>
-        <div class="projects">
+
+        <div class="project">
+          <div class="flexSB">
+
+            <div class="projLeft">
+              <div class="projTitle">Tic-Tac-Toes</div>
+              <div class="projSkillsBox">
+                <div class="projSkills">
+                  <div class="projLang">html</div>
+                  <div class="projLang">css</div>
+                  <div class="projLang">jquery</div>
+                </div>
+              </div>
+
+              <div class="projDesc">
+                Tic Tac Toes is a jQuery based game that consists of 9 tic tac toe boards which are dynamically created with JQuery. Each board is a directory of the enitre game board. For example if a player places their peice on the top right corner of a little board, the next active board will be the one in the top right. The objective is to win 3 boards in a row. Click the live link to find out more and give it a play, or check out my github to take a look behind the scenes.
+              </div>
+              <!-- <div class="projLangBox"> -->
+
+            </div>
+
+            <div class="projRight">
+              <div id="tic_tac_toes" class="projImg">
+                <img src="./imgs/project_photos/tic_tac_toes.png" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div class="btns">
+
+          </div>
+          <hr class="projLine">
+        </div>
+
+
+        <!-- <div class="projects">
           <div class="flexProjects">
             <div class="projBox">
-              <div class="projName">Tic Tac Toes</div>
+              <div class="projNameBox">
+                <div class="btn btnLeft"><a href="https://sbyrne22.github.io/tic-tac-toes/" target="_blank">Live</a></div>
+                <div class="projName">
+                  Tic Tac Toes
+                </div>
+
+                <div class="btn btnRight"><a href="https://github.com/sbyrne22/tic-tac-toes" target="_blank">GitHub</a></div>
+              </div>
               <div class="">
                 <div id="ticHover" class="projHover"></div>
                 <div id="ticInfo" class="projInfo">
@@ -146,15 +193,28 @@
 
                   <div class="infoContent">
                     <div class="infoHeading">Description:</div>
-                    Tic Tac Toes is a jQuery based game that consists of 9 tic tac toe boards whixh will be fought for in order to win 3 boards in a row. Click the live link to find out more and give it a play, or check out my github to take a look behind the scenes.
+                    Tic Tac Toes is a jQuery based game that consists of 9 tic tac toe boards which will be fought for in order to win 3 boards in a row. Click the live link to find out more and give it a play, or check out my github to take a look behind the scenes.
                   </div>
 
                 </div>
-                <div id="tic_tac_toes" class="projCard"></div>
-              </div>
-              <div class="btns">
-                <div class="btn"><a href="https://sbyrne22.github.io/tic-tac-toes/" target="_blank">Live</a></div>
-                <div class="btn"><a href="https://github.com/sbyrne22/tic-tac-toes" target="_blank">GitHub</a></div>
+                <div class="projCard">
+                  <div id="tic_tac_toes" class="projImg"></div>
+                  <div class="projInfoSlider">
+                    <div class="projSliderTitles">
+                      <div id="languages">Languages</div>
+                      <div id="description">Description</div>
+                    </div>
+
+                    <div id="tic_tac_toes_Languages" class="projSliderContent">
+                      HTML • CSS • jQuery
+                    </div>
+                    <div id="tic_tac_toes_Description" class="projSliderContent">
+                      Tic Tac Toes is a jQuery based game that consists of 9 tic tac toe boards which will be fought for in order to win 3 boards in a row. Click the live link to find out more and give it a play, or check out my github to take a look behind the scenes.
+                    </div>
+
+
+                  </div>
+                </div>
               </div>
             </div>
             <div class="projBox">
@@ -168,14 +228,14 @@
 
                   <div class="infoContent">
                     <div class="infoHeading">Description:</div>
-                    Appitite is a Web app where users can view and create recipes to share with the world.
+                    Appitite is a Web app where users can view and create recipes to share with the world.This app is made using EJS, HTML, CSS, Node.js and MongoDB.
                   </div>
                 </div>
                 <div id="appitite" class="projCard"></div>
               </div>
               <div class="btns">
-                <div class="btn"><a href="https://appitite.herokuapp.com/recipes" target="_blank">Live</a></div>
-                <div class="btn"><a href="https://github.com/sbyrne22/Appitite" target="_blank">GitHub</a></div>
+                <div class="btn btnLeft"><a href="https://appitite.herokuapp.com/recipes" target="_blank">Live</a></div>
+                <div class="btn btnRight"><a href="https://github.com/sbyrne22/Appitite" target="_blank">GitHub</a></div>
               </div>
             </div>
           </div>
@@ -191,14 +251,14 @@
 
                   <div class="infoContent">
                     <div class="infoHeading">Description:</div>
-                    Quip Pro Quo is a web app where user answer the questions with the funniest answer they can think of, as well as 'like' other users' answers. This was a group project where I was in charge of the CSS and UI and UE, and helped pair program the back-end and user authentication.
+                    Quip Pro Quo is a web app where user answer the questions with the funniest answer they can think of, as well as 'like' other users' answers. This was a group project where I was in charge of the HTML and CSS and UI and UE, and helped pair program the front and back-end and user authentication using Ruby on Rails, Node.js, Javascript and Angular.js.
                   </div>
                 </div>
                 <div id="quip_pro_quo" class="projCard"></div>
               </div>
               <div class="btns">
-                <div class="btn"><a href="https://quip-pro-quo-frontend.herokuapp.com" target="_blank">Live</a></div>
-                <div class="btn"><a href="https://github.com/sbyrne22/quip_pro_quo_api" target="_blank">GitHub</a></div>
+                <div class="btn btnLeft"><a href="https://quip-pro-quo-frontend.herokuapp.com" target="_blank">Live</a></div>
+                <div class="btn btnRight"><a href="https://github.com/sbyrne22/quip_pro_quo_api" target="_blank">GitHub</a></div>
               </div>
             </div>
             <div class="projBox">
@@ -211,20 +271,20 @@
                     HTML • CSS • jQuery • Angular.js • MongoDB • Node • Express </div>
                   <div class="infoContent">
                     <div class="infoHeading">Description:</div>
-                    XCursion is a web app where users' can add places they've been to and want to, to one of the two lists ('been to' and 'want to'). This was a group project where I was in charge of the styling and UI except for the forms.
+                    XCursion is a web app where users' can add places they've been to and want to, to one of the two lists ('been to' and 'want to'). This was a group project where I was in charge of the styling using HTML and CSS (except for the forms) and the UI. I also helped program the controllers and pair program the authentication using Angular.js, Node.js, and MongoDB.
                   </div>
                 </div>
                 <div id="xcursion" class="projCard"></div>
               </div>
               <div class="btns">
-                <div class="btn"><a href="https://xcursion.herokuapp.com" target="_blank">Live</a></div>
-                <div class="btn"><a href="https://github.com/sbyrne22/forked_travel_tracker" target="_blank">GitHub</a></div>
+                <div class="btn btnLeft"><a href="https://xcursion.herokuapp.com" target="_blank">Live</a></div>
+                <div class="btn btnRight"><a href="https://github.com/sbyrne22/forked_travel_tracker" target="_blank">GitHub</a></div>
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
-      <a id="contact"></a>
+      <!-- <a id="contact"></a>
       <section class="contact">
         <p class="heading">Contact</p>
 
@@ -241,7 +301,7 @@
           <input id="submit" name="submit" type="submit" value="Submit">
         </form>
 
-      </section>
+      </section> -->
 
     </main>
 

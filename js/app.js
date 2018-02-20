@@ -19,6 +19,20 @@ const $quipHover = $('#quipHover');
 const $xcursionInfo = $('#xcursionInfo');
 const $xcursionHover = $('#xcursionHover');
 
+const $contactBtn = $('#contactBtn');
+const $contactModel = $('.contactModel');
+
+// Contact Model
+$contactBtn.on('click', () => {
+  console.log('clicked');
+  if ($('.contactModel').css('display') == 'none') {
+    $('.contactModel').css('display', 'block');
+  } else if ($('.contactModel').css('display') == 'block') {
+    $('.contactModel').css('display', 'none');
+  };
+
+});
+
 // tic_tac_toes
 $ticHover.on( "mouseover", () => {
   $('#ticInfo').fadeIn( 500 );
@@ -91,6 +105,30 @@ $(window).on('resize', () => {
     $('.burger').css('display', 'inline-block');
   }
 })
-
+// Scroll Feautres
+// let $animation_elements = $('.animation-element');
+// $(window).on('scroll resize', check_in_view);
+// $(window).trigger('scroll');
+//
+// let  check_in_view() => {
+//   let window_height = $(window).height();
+//   let window_top_position = $(window).scrollTop();
+//   let window_bottom_position = (window_top_position + window_height);
+//
+//   $.each($animation_elements, () => {
+//     let $element = $(this);
+//     let element_height = $element.outerHeight();
+//     let element_top_position = $element.offset().top;
+//     let element_bottom_position = (element_top_position + element_height);
+//
+//     //check to see if this current container is within viewport
+//     if ((element_bottom_position >= window_top_position) &&
+//         (element_top_position <= window_bottom_position)) {
+//       $element.addClass('in-view');
+//     } else {
+//       $element.removeClass('in-view');
+//     }
+//   });
+// }
 
 });

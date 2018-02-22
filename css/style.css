@@ -5,6 +5,9 @@
 /* font-family: 'Muli', sans-serif; */
 /* font-family: 'Open Sans Condensed', sans-serif; */
 
+* {
+  /* border: 1px solid black; */
+}
 a {
   text-decoration: none;
   color: #000000;
@@ -32,8 +35,8 @@ header {
   margin: 30px auto 0 auto;
   border-bottom: 2px solid rgba(255, 255, 255, 1);
   height: 97vh;
-  min-height: 280px;
-  padding: 20vh 2%;
+  min-height: 500px;
+  padding: 20vh 2% 10vh 2%;
   box-sizing: border-box;
   background-image: url("../imgs/spiration dark.png");
 }
@@ -53,8 +56,6 @@ nav {
   box-sizing: border-box;
 }
 section {
-  /* font-family: 'Dosis', sans-serif; */
-  /* font-family: 'Muli', sans-serif; */
   font-family: helvetica, sans-serif;
   font-weight: 100;
   padding: 5px 5%;
@@ -65,7 +66,7 @@ footer {
   padding: 5px 2%;
 }
 .about {
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 .contactModel {
   display: none;
@@ -125,6 +126,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 50px;
+  align-items: center;
 }
 .flexSBR {
   /* margin: 0 auto; */
@@ -153,8 +155,13 @@ footer {
   font-size: 40px;
   font-weight: 200;
   text-align: center;
-  /* text-decoration: underline; */
-  margin: 30px auto 100px auto;
+  margin: 30px auto 50px auto;
+
+  background: rgba(200, 200, 200, 1);
+
+  /* box-shadow: 0px 2px 2px 0px rgba(100, 100, 100, 1), 0 4px 8px 0 rgba(100, 100, 100, 1); */
+
+  /* box-shadow: 0px 2px 2px 0px rgba(100, 100, 100, 1), 0 4px 8px 0 rgba(100, 100, 100, 1); */
 }
 
 .project {
@@ -241,26 +248,7 @@ footer {
   margin: 0px 10px 3px 0px;
   box-sizing: border-box;
 }
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-
-.projHover {
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  z-index: 10;
-}
-.infoHeading {
-  font-size: 20px;
-  margin: 0 5px 2px 0;
-}
-.infoLanguages {
-  font-size: 15px;
-  margin-bottom: 12px;
-}
-.infoContent {
-  font-size: 15px;
-}
 .btns {
   font-family: 'Dosis', sans-serif;
   margin-bottom: 7px;
@@ -300,12 +288,14 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* justify-content: flex-start; */
+  /* justify-content: center; */
   align-items: baseline;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   -webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(250, 250, 250 , .1)));
-  width: 380px;
+  /* max-width: 48%; */
+  max-width: 380px;
   height: 250px;
+  margin-right: 5px;
   /* border: 1px solid red; */
 }
 .skillBox {
@@ -322,14 +312,21 @@ footer {
   margin: 5px;
 }
 .textBox {
-  max-width: 400px;
-  /* max-height: 300px; */
-  /* margin-top: 50px; */
-  border: 1px solid brown;
+  margin-bottom: 70px;
+  /* border: 1px solid brown; */
   text-align: center;
   font-size: 18px;
-  line-height: 40px;
-  /* margin: 50px auto; */
+  line-height: 35px;
+}
+.textBoxSkills {
+  max-width: 400px;
+  /* max-width: 48%; */
+  /* height: 200px; */
+  margin-left: 5px;
+  /* border: 1px solid brown; */
+  text-align: center;
+  font-size: 18px;
+  line-height: 35px;
 }
 .closeheaderBtn {
   display: none;
@@ -384,9 +381,6 @@ footer {
 /* End Annimations */
 /* ------------- Media Queries ------------- */
 @media (max-width: 750px) {
-  .imgCircle {
-    margin: 60px auto 0 auto;
-  }
   .brandStatement {
     font-size: 20px;
     line-height: 40px;
@@ -397,9 +391,6 @@ footer {
   .aboutMediaQry {
     display: inline-block;
   }
-  .skills {
-    margin-top: 90px;
-  }
   .projDesc {
     margin-top: 30px;
   }
@@ -409,24 +400,34 @@ footer {
   .burger {
     display: inline-block;
   }
-  .imgCircle {
-    margin-bottom: 100px;
-  }
   .skills {
-    margin: 0 0 100px 0;
-    /* margin-bottom: 100px; */
     justify-content: center;
+    margin: 0 auto 20px auto;
+    height: 180px;
+  }
+  .skillBox {
+    padding: 2px;
+    margin: 0px 5px 0px 5px;
+    box-sizing: border-box;
+  }
+  .skillText {
+    font-size: 15px;
+    /* margin: 3px; */
   }
   .flexSB {
     margin-bottom: 0px;
   }
 
   section {
-    min-height: 0px;
+    /* min-height: 0px; */
+    margin-bottom: 75px;
   }
 }
 
 @media (max-width: 700px) {
+  .heading {
+    font-size: 34px;
+  }
   .project {
     /* border: 1px solid black; */
     margin: 0  auto 50px auto;

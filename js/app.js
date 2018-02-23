@@ -23,7 +23,7 @@ const $contactBtn = $('#contactBtn');
 const $mobileContactBtn = $('#mobileContactBtn');
 const $contactModel = $('.contactModel');
 
-const navShadow = '0px 2px 2px 0px rgba(200, 200, 200, .8), 0 4px 8px 0 rgba(50, 50, 50, .8)';
+const navShadow = '0px 2px 2px 0px rgba(200, 200, 200, .8), 0 2px 8px 0 rgba(50, 50, 50, .8)';
 
 // Contact Model
 $contactBtn.on('click', () => {
@@ -102,12 +102,7 @@ $(window).on('resize', () => {
     if ($('.closeheaderBtn').css('display') == 'none') {
       $('.burger').css('display', 'inline-block');
     }
-
-    // $('.closeheaderBtn').css('display', 'none');
     $('.contactModel').css('display', 'none');
-
-    // $( "#contactModel" ).toggleClass( "contactModel", "mobileContactModel")
-    //change styles for contact model and arrow
   }
 })
 

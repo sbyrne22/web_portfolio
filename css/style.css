@@ -64,6 +64,8 @@ header {
 }
 nav {
   font-family: helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
   transform: translate(-50%, 0);
   background: rgba(255, 255, 255, 0.9);
   position: fixed;
@@ -77,12 +79,6 @@ nav {
   box-sizing: border-box;
   box-shadow: 0px 2px 2px 0px rgba(200, 200, 200, .8), 0 2px 8px 0 rgba(50, 50, 50, .8);
 }
-/* input {
-  -webkit-color: black;
-}
-input:active {
-  border: none;
-} */
 section {
   font-family: helvetica, sans-serif;
   font-weight: 100;
@@ -200,7 +196,7 @@ footer {
   height: 250px;
   margin: 0 auto;
   border-radius: 100%;
-  border: 5px solid #000000;
+  border: 3px solid #DF6A6A;
   box-sizing: border-box;
   background-image: url("../imgs/profpic.png");
   background-position: center;
@@ -224,7 +220,7 @@ footer {
 }
 .item {
   height: 30px;
-  padding: 7px 10px;
+  padding: 8px 10px;
   box-sizing: border-box;
 }
 .item:hover {
@@ -365,10 +361,6 @@ footer {
   background: rgba(150, 150, 150, 1);
 }
 .aboutskillsBox {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; */
   background: #4DB3B4;
   border-radius: 5px;
   margin-bottom: 50px;
@@ -379,14 +371,11 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-
   max-width: 380px;
   height: 250px;
   margin-right: 5px;
 }
 .skillBox {
-  text-transform: uppercase;
-  text-align: center;
   background: #DDDDDD;
   padding: 2px;
   border-radius: 4px;
@@ -394,6 +383,8 @@ footer {
   box-sizing: border-box;
 }
 .skillText {
+  text-transform: uppercase;
+  text-align: center;
   font-size: 17px;
   margin: 5px;
 }
@@ -506,7 +497,7 @@ footer {
   }
   .project {
     /* border: 1px solid black; */
-    margin: 0  auto 50px auto;
+    margin: 0  auto 80px auto;
     display: inline-block;
     width: 100%;
   }

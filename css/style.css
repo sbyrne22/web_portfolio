@@ -21,6 +21,16 @@
   }
 /* End Annimations */
 
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -54,6 +64,8 @@ header {
 }
 nav {
   font-family: helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
   transform: translate(-50%, 0);
   background: rgba(255, 255, 255, 0.9);
   position: fixed;
@@ -70,7 +82,7 @@ nav {
 section {
   font-family: helvetica, sans-serif;
   font-weight: 100;
-  padding: 5px 5%;
+  padding: 5px 0;
 }
 footer {
   text-align: center;
@@ -129,6 +141,7 @@ footer {
   margin: 0 0 0 35px;
 }
 .contactContent {
+  margin-top: 5px;
   user-select: none;
   padding: 5px;
   box-sizing: border-box;
@@ -183,7 +196,7 @@ footer {
   height: 250px;
   margin: 0 auto;
   border-radius: 100%;
-  border: 5px solid #000000;
+  border: 3px solid #DF6A6A;
   box-sizing: border-box;
   background-image: url("../imgs/profpic.png");
   background-position: center;
@@ -207,7 +220,7 @@ footer {
 }
 .item {
   height: 30px;
-  padding: 7px 10px;
+  padding: 8px 10px;
   box-sizing: border-box;
 }
 .item:hover {
@@ -232,6 +245,9 @@ footer {
 }
 
 .project {
+  /* width: 90%; */
+  padding: 0 7% 0 7%;
+  box-sizing: border-box;
   margin-bottom: 200px;
   display: flex;
   flex-direction: row;
@@ -344,11 +360,11 @@ footer {
 .github {
   background: rgba(150, 150, 150, 1);
 }
-.aboutMediaQry {
+.aboutskillsBox {
   background: #4DB3B4;
-  padding: 10px;
   border-radius: 5px;
   margin-bottom: 50px;
+  padding: 5px 4% 5px 4%;
 }
 .skills {
   display: flex;
@@ -360,30 +376,33 @@ footer {
   margin-right: 5px;
 }
 .skillBox {
-  text-transform: uppercase;
-  text-align: center;
   background: #DDDDDD;
   padding: 2px;
   border-radius: 4px;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 20px 0px 0px;
   box-sizing: border-box;
 }
 .skillText {
+  text-transform: uppercase;
+  text-align: center;
   font-size: 17px;
   margin: 5px;
 }
 .textBox {
+  padding: 0 4% 0 4%;
   margin-bottom: 70px;
   text-align: center;
   font-size: 18px;
   line-height: 35px;
 }
 .textBoxSkills {
-  max-width: 400px;
+  max-width: 350px;
+  padding: 0;
   color: #DDDDDD;
   margin-left: 5px;
   font-size: 18px;
   line-height: 35px;
+  /* border: 1px solid red; */
 }
 .closeheaderBtn {
   display: none;
@@ -429,9 +448,6 @@ footer {
   .about {
     text-align: center;
   }
-  .aboutMediaQry {
-    display: inline-block;
-  }
   .projDesc {
     margin-top: 30px;
   }
@@ -443,6 +459,10 @@ footer {
   }
   .burger {
     display: inline-block;
+  }
+  .aboutskillsBox {
+    /* display: inline-block; */
+    flex-wrap: wrap;
   }
   .skills {
     justify-content: center;
@@ -458,6 +478,9 @@ footer {
     font-size: 15px;
     /* margin: 3px; */
   }
+  .textBoxSkills {
+    margin: 0 auto;
+  }
   .flexSB {
     margin-bottom: 0px;
   }
@@ -468,13 +491,13 @@ footer {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 706px) {
   .heading {
     font-size: 34px;
   }
   .project {
     /* border: 1px solid black; */
-    margin: 0  auto 50px auto;
+    margin: 0  auto 80px auto;
     display: inline-block;
     width: 100%;
   }

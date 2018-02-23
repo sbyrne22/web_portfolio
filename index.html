@@ -20,36 +20,43 @@
     <nav class="flexSB">
       <a id="homeBtn" class="item" href="#top">Sean Byrne</a>
       <div class="burger item">
-        <i class="material-icons">view_headline</i>
+        <i class="material-icons navIcons">view_headline</i>
       </div>
       <div class="closeheaderBtn item">
-        <i class="material-icons">clear</i>
+        <i class="material-icons navIcons">clear</i>
       </div>
 
       <div class="flexSB items">
         <a class="item" href="#about">About</a>
         <a class="item" href="#projects">Projects</a>
-        <a class="item" id="contactBtn">Contact</a>
         <a class="item" href="https://standardresume.co/seanbyrne" target="_blank">Resume</a>
+        <a class="item" id="contactBtn">Contact</a>
       </div>
       <div class="mobileLinks">
-        <a class="item" href="#about">About</a>
-        <a class="item" href="#projects">Projects</a>
-        <a class="item">Contact</a>
-        <a class="item" href="https://standardresume.co/seanbyrne" target="_blank">Resume</a>
+        <a class="item mobileLink" href="#about">About</a>
+        <a class="item mobileLink" href="#projects">Projects</a>
+        <a class="item mobileLink" href="https://standardresume.co/seanbyrne" target="_blank">Resume</a>
+        <a class="item" id="mobileContactBtn">Contact</a>
       </div>
-      <div class="contactModel">
-        <div class="arrow"></div>
+      <div class="contactModel" id="contactModel">
+        <div class="arrow" id="arrow"></div>
         <div class="contactContent">
-          sbyrne2074@gmail.com <br>
-          (570)-534-5409
+          <div class="inputBox">
+            <input class="modelInput" type="text" value="sbyrne2074@gmail.com" id="emailInput" disabled>
+            <div id="copyEmail" class="copy"><i class="material-icons pasteIcon">content_paste</i></div>
+          </div>
+          <div class="inputBox">
+            <input class="modelInput" type="text" value="(570)-534-5409" id="phoneInput" disabled>
+            <div id="copyPhone" class="copy"><i class="material-icons pasteIcon">content_paste</i></div>
+          </div>
         </div>
       </div>
+
     </nav>
     <a id="top"></a>
     <header>
       <div class="headerContent">
-        <div class="imgCircle slideIn"></div>
+        <div class="imgCircle"></div>
         <h3>Sean Byrne</h3>
         <h5>Full-Stack Developer</h5>
       </div>
@@ -68,7 +75,7 @@
       <section class="about">
         <p class="heading">About</p>
         <div class="textBox">
-          I am a passionate web developer at heart, a problem solver by nature. I am tedious with my code and have great attention to detail. I don't go a day without learning something new. I love learning and implementing new technologies. I am hardworking and never give up. You will never find me giving less than 100% with anything I do. I am motivated, efficient, and I love what I do.
+          I am a passionate web developer at heart, a problem solver by nature. I am precise with my code and have great attention to detail. I don't go a day without learning something new. I love learning and implementing new technologies. I am hardworking and never give up. You will never find me giving less than 100% with anything I do. I am motivated, efficient, and I love what I do.
         </div>
         <!-- <div class="flexSBR aboutMediaQry">
 
@@ -134,7 +141,7 @@
             </div>
           </div>
           <div class="textBoxSkills">
-            My skillset covers the full stack though My passion lies in front-end development and connecting front-end design and back-end infrastructure.
+            My skillset covers the full stack though my passion lies in front-end development and connecting front-end design and back-end infrastructure.
           </div>
         </div>
       </section>
@@ -192,7 +199,7 @@
                 </div>
 
               <div class="projDesc">
-                Appitite is a Web app where users can view and create recipes to share with the world.This app is made using EJS, HTML, CSS, Node.js and MongoDB.
+                Appitite is a Web app where users can addd their favorite recipes for the world to see. Users can add steps, ingrediants, a description, and picture when adding a recipe, and all other users can then view that recipe. This app is an educational project and is made using EJS, HTML, CSS, Node.js and MongoDB.
               </div>
             </div>
             <div class="projRight">
@@ -260,17 +267,17 @@
           </div>
       </div>
     </section>
-    </main>
 
-    <!-- <footer>
-      <h1>Footer</h1>
+    <footer>
 
-      <div class="socialLinks">
-        <div class="link">LinkedIn</div>
-        <div class="link">Github</div>
-      </div>
+
+
+        <a href="https://github.com/sbyrne22" target="_blank"><img src="./imgs/GitHubLight-32px.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/sean-m-byrne/" target="_blank"><img src="./imgs/In-2C-34px-R.png" alt="LinkedIn"> </a>
+
       <p>Sean Byrne 2018</p>
-    </footer> -->
-
+      <a href="#">Portfolio Github</a> <br>
+    </footer>
+    </main>
   </body>
 </html>

@@ -32,7 +32,6 @@ $contactBtn.on('click', () => {
   $( "#arrow" ).addClass("arrow");
   $( "#arrow" ).removeClass("mobileArrow");
 
-  console.log('clicked');
   if ($('.contactModel').css('display') == 'none') {
     $('.contactModel').css('display', 'block');
   } else if ($('.contactModel').css('display') == 'block') {
@@ -46,7 +45,6 @@ $mobileContactBtn.on('click', () => {
   $( "#arrow" ).removeClass("arrow");
   $( "#arrow" ).addClass("mobileArrow");
 
-  console.log('clicked');
   if ($('.mobileContactModel').css('display') == 'none') {
     $('.mobileContactModel').css('display', 'block');
   } else if ($('.mobileContactModel').css('display') == 'block') {
@@ -91,7 +89,6 @@ $mobileContactBtn.on('click', () => {
 
 $(window).on('resize', () => {
   if ($(window).width() > 735) {
-    console.log("window width: ", $(window).width());
     $('.mobileLinks').css('display', 'none');
     $('.burger').css('display', 'none');
     $('.closeheaderBtn').css('display', 'none');
@@ -119,8 +116,6 @@ $('#copyEmail').on('click', () => {
   // Copy text whithin text field
   document.execCommand("Copy");
   $("#emailInput").prop('disabled', true);
-
-  // alert("Copied the text: " + copyText.value);
 });
 
 // Phone
@@ -135,8 +130,6 @@ $('#copyPhone').on('click', () => {
   // Copy text whithin text field
   document.execCommand("Copy");
   $("#phoneInput").prop('disabled', true);
-
-  // alert("Copied the text: " + copyText.value);
 });
 
 // End Copy Clipboard -----------------

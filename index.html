@@ -20,216 +20,263 @@
     <nav class="flexSB">
       <a id="homeBtn" class="item" href="#top">Sean Byrne</a>
       <div class="burger item">
-        <i class="material-icons">view_headline</i>
+        <i class="material-icons navIcons">view_headline</i>
       </div>
       <div class="closeheaderBtn item">
-        <i class="material-icons">clear</i>
+        <i class="material-icons navIcons">clear</i>
       </div>
 
       <div class="flexSB items">
         <a class="item" href="#about">About</a>
         <a class="item" href="#projects">Projects</a>
-        <a class="item" href="#contact">Contact</a>
         <a class="item" href="https://standardresume.co/seanbyrne" target="_blank">Resume</a>
+        <a class="item" id="contactBtn">Contact</a>
       </div>
       <div class="mobileLinks">
-        <a class="item" href="#about">About</a>
-        <a class="item" href="#projects">Projects</a>
-        <a class="item" href="#contact">Contact</a>
-        <a class="item" href="https://standardresume.co/seanbyrne" target="_blank">Resume</a>
-
+        <a class="item mobileLink" href="#about">About</a>
+        <a class="item mobileLink" href="#projects">Projects</a>
+        <a class="item mobileLink" href="https://standardresume.co/seanbyrne" target="_blank">Resume</a>
+        <a class="item" id="mobileContactBtn">Contact</a>
       </div>
+      <div class="contactModel" id="contactModel">
+        <div class="arrow" id="arrow"></div>
+        <div class="contactContent">
+          <div class="inputBox">
+            <input class="modelInput" type="text" value="sbyrne2074@gmail.com" id="emailInput" disabled>
+            <div id="copyEmail" class="copy"><i class="material-icons pasteIcon">content_paste</i></div>
+          </div>
+          <div class="inputBox">
+            <input class="modelInput" type="text" value="(570)-534-5409" id="phoneInput" disabled>
+            <div id="copyPhone" class="copy"><i class="material-icons pasteIcon">content_paste</i></div>
+          </div>
+        </div>
+      </div>
+
     </nav>
     <a id="top"></a>
     <header>
+      <div class="headerContent">
+        <div class="imgCircle"></div>
+        <h3>Sean Byrne</h3>
+        <h5>Full-Stack Developer</h5>
+      </div>
 
-        <h3>Welcome to Sean Byrne</h3>
-        <h5>Junior Developer and GA Graduate</h5>
 
       <div class="socialLinks">
         <a href="https://github.com/sbyrne22" target="_blank"><img src="./imgs/GitHubLight-32px.png" alt="GitHub"></a>
         <a href="https://www.linkedin.com/in/sean-m-byrne/" target="_blank"><img src="./imgs/In-2C-34px-R.png" alt="LinkedIn"> </a>
       </div>
+
     </header>
+
     <main>
+
       <a id="about"></a>
       <section class="about">
         <p class="heading">About</p>
-        <div class="brandStatement">
-          I'm a General Assembly coding bootcamp graduate. My skillset covers the full stack  but my passion lies in connecting front-end design and back-end infrastructure. I enjoy developing in Javascript, being it's my favorite and most proficient language.
+        <div class="textBox">
+          I am a passionate web developer at heart, a problem solver by nature. I am precise with my code and have great attention to detail. I don't go a day without learning something new. I love learning and implementing new technologies. I am hardworking and never give up. You will never find me giving less than 100% with anything I do. I am motivated, efficient, and I love what I do.
         </div>
+        <!-- <div class="flexSBR aboutMediaQry">
+
+
+        </div> -->
+
         <div class="flexSB aboutMediaQry">
-
-
           <div class="skills">
-            <div class="skillPack flexSB">
-              <div class="skill">HTML</div>
-              <div class="skillBar"><div id="html" class="barFill"></div></div>
-            </div>
-            <div class="skillPack flexSB">
-              <div class="skill">CSS</div>
-              <div class="skillBar"><div id="css" class="barFill"></div></div>
-            </div>
-            <div class="skillPack flexSB">
-              <div class="skill">JavaScript</div>
-              <div class="skillBar">
-                <div id="javaScript" class="barFill"></div>
+            <div class="skillBox">
+              <div class="skillText">
+                HTML
               </div>
             </div>
-            <div class="skillPack flexSB">
-              <div class="skill">JQuery</div>
-              <div class="skillBar"><div id="jQuery" class="barFill"></div></div>
+            <div class="skillBox">
+              <div class="skillText">
+                css
+              </div>
             </div>
-            <div class="skillPack flexSB">
-              <div class="skill">node.js</div>
-              <div class="skillBar"><div id="node" class="barFill"></div></div>
+            <div class="skillBox">
+              <div class="skillText">
+                javascript
+              </div>
             </div>
-            <div class="skillPack flexSB">
-              <div class="skill">Angular.js</div>
-              <div class="skillBar"><div id="angular" class="barFill"></div></div>
+            <div class="skillBox">
+              <div class="skillText">
+                jQuery
+              </div>
             </div>
-            <div class="skillPack flexSB">
-              <div class="skill">Ruby/Rails</div>
-              <div class="skillBar"><div id="ruby" class="barFill"></div></div>
+            <div class="skillBox">
+              <div class="skillText">
+                ejs
+              </div>
             </div>
-            <div class="skillPack flexSB">
-              <div class="skill">PostgreSQL</div>
-              <div class="skillBar"><div id="postgreSQL" class="barFill"></div></div>
+            <div class="skillBox">
+              <div class="skillText">
+                angular.js
+              </div>
             </div>
-            <div class="skillPack flexSB">
-              <div class="skill">MongoDB</div>
-              <div class="skillBar"><div id="mongoDB" class="barFill"></div></div>
+            <div class="skillBox">
+              <div class="skillText">
+                node.js
+              </div>
+            </div>
+            <div class="skillBox">
+              <div class="skillText">
+                Ruby/Rails
+              </div>
+            </div>
+            <div class="skillBox">
+              <div class="skillText">
+                PostgreSQL
+              </div>
+            </div>
+            <div class="skillBox">
+              <div class="skillText">
+                MongoDB
+              </div>
+            </div>
+            <div class="skillBox">
+              <div class="skillText">
+                express
+              </div>
             </div>
           </div>
-          <div class="imgCircle"></div>
+          <div class="textBoxSkills">
+            My skillset covers the full-stack, though my passion lies in front-end development and connecting front-end design and back-end infrastructure.
+          </div>
         </div>
-
       </section>
+
       <a id="projects"></a>
       <section>
         <p class="heading">Projects</p>
-        <div class="projects">
-          <div class="flexProjects">
-            <div class="projBox">
-              <div class="projName">Tic Tac Toes</div>
-              <div class="">
-                <div id="ticHover" class="projHover"></div>
-                <div id="ticInfo" class="projInfo">
 
-                  <div class="infoLanguages">
-                    <div class="infoHeading">Languages:</div>
-                    HTML • CSS • jQuery </div>
+        <div class="project">
 
-                  <div class="infoContent">
-                    <div class="infoHeading">Description:</div>
-                    Tic Tac Toes is a jQuery based game that consists of 9 tic tac toe boards whixh will be fought for in order to win 3 boards in a row. Click the live link to find out more and give it a play, or check out my github to take a look behind the scenes.
-                  </div>
-
+            <div class="projLeft">
+              <div class="projTitleBox tictactoesTitleBorder">
+                <div class="projTitle">Tic-Tac-Toes</div>
+                <div class="btns">
+                  <a href="https://sbyrne22.github.io/tic-tac-toes/" target="_blank"><div class="btn live">Live</div></a>
+                  <a href="https://github.com/sbyrne22/tic-tac-toes" target="_blank"><div class="btn github">Github</div></a>
                 </div>
-                <div id="tic_tac_toes" class="projCard"></div>
               </div>
-              <div class="btns">
-                <div class="btn"><a href="https://sbyrne22.github.io/tic-tac-toes/" target="_blank">Live</a></div>
-                <div class="btn"><a href="https://github.com/sbyrne22/tic-tac-toes" target="_blank">GitHub</a></div>
+
+                <div class="projLangBox">
+                  <div class="projLang">html</div>
+                  <div class="projLang">css</div>
+                  <div class="projLang">jquery</div>
+                </div>
+
+              <div class="projDesc">
+                Tic-Tac-Toes is a jQuery based game that consists of 9 tic tac toe boards which are dynamically created with JQuery. Each little board is a directory of the enitre game board. For example if a player places their peice on the top right corner of a little board, the next active board will be the one in the top right. The objective is to win 3 boards in a row. Click the live link to give it a play, or check out my github to take a look behind the scenes.
               </div>
             </div>
-            <div class="projBox">
-              <div class="projName">Appitite</div>
-              <div class="">
-                <div id="appititeHover" class="projHover"></div>
-                <div id="appititeInfo" class="projInfo">
-                  <div class="infoLanguages">
-                    <div class="infoHeading">Languages:</div>
-                    HTML • CSS • jQuery • Ejs • MongoDB • Node • Express </div>
-
-                  <div class="infoContent">
-                    <div class="infoHeading">Description:</div>
-                    Appitite is a Web app where users can view and create recipes to share with the world.
-                  </div>
-                </div>
-                <div id="appitite" class="projCard"></div>
-              </div>
-              <div class="btns">
-                <div class="btn"><a href="https://appitite.herokuapp.com/recipes" target="_blank">Live</a></div>
-                <div class="btn"><a href="https://github.com/sbyrne22/Appitite" target="_blank">GitHub</a></div>
-              </div>
+            <div class="projRight">
+              <div id="tic_tac_toes" class="projImg"></div>
             </div>
-          </div>
-          <div class="flexProjects">
-            <div class="projBox">
-              <div class="projName">Quip Pro Quo</div>
-              <div class="">
-                <div id="quipHover" class="projHover"></div>
-                <div id="quipInfo" class="projInfo">
-                  <div class="infoLanguages">
-                    <div class="infoHeading">Languages:</div>
-                    HTML • CSS • Angular.js • Ruby/Rails • Node </div>
-
-                  <div class="infoContent">
-                    <div class="infoHeading">Description:</div>
-                    Quip Pro Quo is a web app where user answer the questions with the funniest answer they can think of, as well as 'like' other users' answers. This was a group project where I was in charge of the CSS and UI and UE, and helped pair program the back-end and user authentication.
-                  </div>
-                </div>
-                <div id="quip_pro_quo" class="projCard"></div>
-              </div>
-              <div class="btns">
-                <div class="btn"><a href="https://quip-pro-quo-frontend.herokuapp.com" target="_blank">Live</a></div>
-                <div class="btn"><a href="https://github.com/sbyrne22/quip_pro_quo_api" target="_blank">GitHub</a></div>
-              </div>
-            </div>
-            <div class="projBox">
-              <div class="projName">XCursion</div>
-              <div class="">
-                <div id="xcursionHover" class="projHover"></div>
-                <div id="xcursionInfo" class="projInfo">
-                  <div class="infoLanguages">
-                    <div class="infoHeading">Languages:</div>
-                    HTML • CSS • jQuery • Angular.js • MongoDB • Node • Express </div>
-                  <div class="infoContent">
-                    <div class="infoHeading">Description:</div>
-                    XCursion is a web app where users' can add places they've been to and want to, to one of the two lists ('been to' and 'want to'). This was a group project where I was in charge of the styling and UI except for the forms.
-                  </div>
-                </div>
-                <div id="xcursion" class="projCard"></div>
-              </div>
-              <div class="btns">
-                <div class="btn"><a href="https://xcursion.herokuapp.com" target="_blank">Live</a></div>
-                <div class="btn"><a href="https://github.com/sbyrne22/forked_travel_tracker" target="_blank">GitHub</a></div>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-      <a id="contact"></a>
-      <section class="contact">
-        <p class="heading">Contact</p>
 
-        <form method="post" action="https://formspree.io/seanbyrne.dev@gmail.com" target="_blank">
-          <label>Name</label>
-          <input name="name" placeholder="Type Here">
+      <!-- Appitite -->
+        <div class="project">
 
-          <label>Email</label>
-          <input name="email" type="email" placeholder="Type Here">
+            <div class="projLeft">
+              <div class="projTitleBox appititeTitleBorder">
+                <div class="projTitle">Appitite</div>
+                <div class="btns">
+                  <a href="https://appitite.herokuapp.com/recipes" target="_blank"><div class="btn live">Live</div></a>
+                  <a href="https://github.com/sbyrne22/Appitite" target="_blank"><div class="btn github">Github</div></a>
+                </div>
+              </div>
 
-          <label>Message</label>
-          <textarea name="message" placeholder="Type Here"></textarea>
+                <div class="projLangBox">
+                  <div class="projLang">html</div>
+                  <div class="projLang">css</div>
+                  <div class="projLang">jquery</div>
+                  <div class="projLang">Ejs</div>
+                  <div class="projLang">MongoDB</div>
+                  <div class="projLang">Express</div>
+                  <div class="projLang">Node</div>
+                </div>
 
-          <input id="submit" name="submit" type="submit" value="Submit">
-        </form>
+              <div class="projDesc">
+                Appitite is a Web app where users can addd their favorite recipes for the world to see. Users can add steps, ingrediants, a description, and picture when adding a recipe, and all other users can then view that recipe. This app is an educational project and is made using EJS, HTML, CSS, Node.js and MongoDB.
+              </div>
+            </div>
+            <div class="projRight">
+              <div id="appitite" class="projImg"></div>
+            </div>
+        </div>
 
-      </section>
+        <!-- Quip Pro Quo -->
+        <div class="project">
 
-    </main>
+            <div class="projLeft">
+              <div class="projTitleBox quip_pro_quoTitleBorder">
+                <div class="projTitle">Quip Pro Quo</div>
+                <div class="btns">
+                    <a href="https://quip-pro-quo-frontend.herokuapp.com" target="_blank"><div class="btn live">Live</div></a>
+                  <a href="https://github.com/sbyrne22/quip_pro_quo_api" target="_blank"><div class="btn github">Github</div></a>
+                </div>
+              </div>
 
-    <!-- <footer>
-      <h1>Footer</h1>
+                <div class="projLangBox">
+                  <div class="projLang">html</div>
+                  <div class="projLang">css</div>
+                  <div class="projLang">angular</div>
+                  <div class="projLang">ruby/rails</div>
+                  <div class="projLang">node</div>
+                </div>
 
-      <div class="socialLinks">
-        <div class="link">LinkedIn</div>
-        <div class="link">Github</div>
+              <div class="projDesc">
+                Quip Pro Quo is a web app where user answer the questions with the funniest answer they can think of, as well as 'like' other users' answers. This was a group project where I was in charge of the HTML and CSS and UI and UE, and helped pair program the front and back-end and user authentication using Ruby on Rails, Node.js, Javascript and Angular.js.
+              </div>
+            </div>
+            <div class="projRight">
+              <div id="quip_pro_quo" class="projImg"></div>
+            </div>
+        </div>
+
+        <!-- XCursion -->
+      <div class="project">
+
+          <div class="projLeft">
+            <div class="projTitleBox xcursionTitleBorder">
+              <div class="projTitle">XCursion</div>
+              <div class="btns">
+                <a href="https://xcursion.herokuapp.com" target="_blank"><div class="btn live">Live</div></a>
+                <a href="https://github.com/sbyrne22/forked_travel_tracker" target="_blank"><div class="btn github">Github</div></a>
+              </div>
+            </div>
+
+              <div class="projLangBox">
+                <div class="projLang">html</div>
+                <div class="projLang">css</div>
+                <div class="projLang">jquery</div>
+                <div class="projLang">angular</div>
+                <div class="projLang">MongoDB</div>
+                <div class="projLang">Express</div>
+                <div class="projLang">Node</div>
+              </div>
+
+            <div class="projDesc">
+              XCursion is a web app where users' can add places they've been to and want to, to one of the two lists ('been to' and 'want to'). This was a group project where I was in charge of the styling using HTML and CSS (except for the forms) and the UI. I also helped program the controllers and pair program the authentication using Angular.js, Node.js, and MongoDB.
+            </div>
+          </div>
+          <div class="projRight">
+            <div id="xcursion" class="projImg"></div>
+          </div>
       </div>
-      <p>Sean Byrne 2018</p>
-    </footer> -->
+    </section>
 
+    <footer>
+      <div class="footerContent">
+        <p>Sean Byrne - 2018</p>
+        <a href="https://github.com/sbyrne22" target="_blank"><img src="./imgs/GitHubLight-32px.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/sean-m-byrne/" target="_blank"><img src="./imgs/In-2C-34px-R.png" alt="LinkedIn"> </a>
+
+        <a href="https://github.com/sbyrne22/web_portfolio/tree/master" target="_blank">Portfolio Github</a>
+      </div>
+    </footer>
+    </main>
   </body>
 </html>

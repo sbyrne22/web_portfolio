@@ -5,19 +5,80 @@
 
 /* Annimations */
 
-  @keyframes slideIn {
-    from  {
-      border-color: purple;
-      right: 0px;
-    }
-    to {
-      border-color: green;
-      left: 20px;
-    }
+  @keyframes slideInLeftToRight {
+    from {left: -100%; opacity: 0;}
+    to {left: 0%; opacity: 1;}
   }
-  .slideIn {
-    animation-name: slideIn;
-    animation-duration: 4s;
+  @keyframes slideInRightToLeft {
+    from {right: -100%; opacity: 0;}
+    to {right: 0%; opacity: 1;}
+  }
+  @keyframes slideInTopToBottom {
+    from {top: -100px;}
+    to {top: 0px;}
+  }
+  .leftToRight {
+    animation: slideInLeftToRight 2s both;
+  }
+  .rightToLeft {
+    animation: slideInRightToLeft 2s both;
+  }
+
+
+  #aboutText {
+    position: relative;
+    opacity: 0;
+    left: -100%;
+  }
+  #skills {
+    position: relative;
+    opacity: 0;
+    left: -100%;
+  }
+  #skillsDesc {
+    position: relative;
+    opacity: 0;
+    right: -100%;
+  }
+  #projDescTicTacToes {
+    position: relative;
+    opacity: 0;
+    left: -100%;
+  }
+  #tic_tac_toesImg {
+    position: relative;
+    opacity: 0;
+    right: -100%;
+  }
+  #projDescAppitite {
+    position: relative;
+    opacity: 0;
+    left: -100%;
+  }
+  #appititeImg {
+    position: relative;
+    opacity: 0;
+    right: -100%;
+  }
+  #projDescQuipProQuo {
+    position: relative;
+    opacity: 0;
+    left: -100%;
+  }
+  #quip_pro_quoImg {
+    position: relative;
+    opacity: 0;
+    right: -100%;
+  }
+  #projDescXcursion {
+    position: relative;
+    opacity: 0;
+    left: -100%;
+  }
+  #xcursionImg {
+    position: relative;
+    opacity: 0;
+    right: -100%;
   }
 /* End Annimations */
 
@@ -43,6 +104,7 @@ body {
   margin: 0 auto;
 }
 main {
+  /* overflow: hidden; */
   width: 100%;
   max-width: 1023px;
   box-sizing: border-box;
@@ -426,16 +488,16 @@ footer {
 
 /* id's ------------------------------------ */
 
-#tic_tac_toes {
+#tic_tac_toesImg {
   background-image: url("../imgs/project_photos/tic_tac_toes.png");
 }
-#quip_pro_quo {
+#quip_pro_quoImg {
   background-image: url("../imgs/project_photos/quip_pro_quo2.png");
 }
-#appitite {
+#appititeImg {
   background-image: url("../imgs/project_photos/appitite2.png");
 }
-#xcursion {
+#xcursionImg {
   background-image: url("../imgs/project_photos/xcursion2.png");
 }
 

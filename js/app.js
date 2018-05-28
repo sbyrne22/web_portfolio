@@ -160,4 +160,92 @@ $('#copyPhone').on('click', () => {
 //   });
 // }
 
+
+// Animatin Triggers ---------------------------------------------
+
+const $aboutText = $( "#aboutText" );
+const $skills = $( "#skills" );
+const $skillsDesc = $( "#skillsDesc" );
+const $projDescTicTacToes = $( "#projDescTicTacToes" );
+const $tic_tac_toesImg = $( "#tic_tac_toesImg" );
+const $projDescAppitite = $( "#projDescAppitite" );
+const $appititeImg = $( "#appititeImg" );
+const $projDescQuipProQuo = $( "#projDescQuipProQuo" );
+const $quip_pro_quoImg = $( "#quip_pro_quoImg" );
+const $projDescXcursion = $( "#projDescXcursion" );
+const $xcursionImg = $( "#xcursionImg" );
+
+
+$isInViewport = (element) => {
+  let elementTop = ($(element).offset().top) + 50;
+  let elementBottom = (elementTop + $(element).outerHeight()) - 150;
+  let viewportTop = $(window).scrollTop();
+  let viewportBottom = viewportTop + $(window).height();
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+  $(window).on('scroll resize', checkAddAnimation = () => {
+    // aboutText ----------------
+    if ($isInViewport($aboutText) == true) {
+      // add animation class
+      $aboutText.addClass("leftToRight");
+    };
+
+    // skills ----------------
+    if ($isInViewport($skills) == true) {
+      // add animation class
+      $skills.addClass("leftToRight");
+    };
+    if ($isInViewport($skillsDesc) == true) {
+      // add animation class
+      $skillsDesc.addClass("rightToLeft");
+    };
+
+    // Tic Tac Toes ----------------
+    if ($isInViewport($projDescTicTacToes) == true) {
+      // add animation class
+      $projDescTicTacToes.addClass("leftToRight");
+    };
+
+    if ($isInViewport($tic_tac_toesImg) == true) {
+      // add animation class
+      $tic_tac_toesImg.addClass("rightToLeft");
+    };
+
+    // Appitite ----------------
+    if ($isInViewport($projDescAppitite) == true) {
+      // add animation class
+      $projDescAppitite.addClass("leftToRight");
+    };
+
+    if ($isInViewport($appititeImg) == true) {
+      // add animation class
+      $appititeImg.addClass("rightToLeft");
+    };
+
+    // Quip Pro Quo ----------------
+    if ($isInViewport($projDescQuipProQuo) == true) {
+      // add animation class
+      $projDescQuipProQuo.addClass("leftToRight");
+    };
+
+    if ($isInViewport($quip_pro_quoImg) == true) {
+      // add animation class
+      $quip_pro_quoImg.addClass("rightToLeft");
+    };
+
+    // XCursion ----------------
+    if ($isInViewport($projDescXcursion) == true) {
+      // add animation class
+      $projDescXcursion.addClass("leftToRight");
+    };
+
+    if ($isInViewport($xcursionImg) == true) {
+      // add animation class
+      $xcursionImg.addClass("rightToLeft");
+    };
+  });
+
+  checkAddAnimation();
+
 });

@@ -423,6 +423,7 @@ footer {
   background: rgba(150, 150, 150, 1);
 }
 .aboutskillsBox {
+  overflow: hidden;
   background: #4DB3B4;
   border-radius: 5px;
   margin-bottom: 50px;

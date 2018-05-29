@@ -13,10 +13,7 @@
     from {right: -100%; opacity: 0;}
     to {right: 0%; opacity: 1;}
   }
-  @keyframes slideInTopToBottom {
-    from {top: -100px;}
-    to {top: 0px;}
-  }
+  
   .leftToRight {
     animation: slideInLeftToRight 2s both;
   }
@@ -102,7 +99,6 @@ h1, h2, h3, h4, h5 {
 
 body {
   margin: 0 auto;
-  overflow-x: hidden;
 }
 main {
   width: 100%;
@@ -307,7 +303,6 @@ footer {
 }
 
 .project {
-  /* width: 90%; */
   padding: 0 7% 0 7%;
   box-sizing: border-box;
   margin-bottom: 200px;
@@ -465,7 +460,6 @@ footer {
   margin-left: 5px;
   font-size: 18px;
   line-height: 35px;
-  /* border: 1px solid red; */
 }
 .closeheaderBtn {
   display: none;
@@ -503,6 +497,12 @@ footer {
 }
 
 /* ------------- Media Queries ------------- */
+@media (max-width: 1040px) {
+  main {
+    overflow: hidden;
+  }
+}
+
 @media (max-width: 750px) {
   .brandStatement {
     font-size: 20px;
@@ -524,7 +524,6 @@ footer {
     display: inline-block;
   }
   .aboutskillsBox {
-    /* display: inline-block; */
     flex-wrap: wrap;
   }
   .skills {
@@ -539,7 +538,6 @@ footer {
   }
   .skillText {
     font-size: 15px;
-    /* margin: 3px; */
   }
   .textBoxSkills {
     margin: 0 auto;
@@ -549,11 +547,9 @@ footer {
   }
 
   section {
-    /* min-height: 0px; */
     margin-bottom: 75px;
   }
 }
-
 @media (max-width: 706px) {
   .heading {
     font-size: 34px;

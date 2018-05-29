@@ -102,9 +102,9 @@ h1, h2, h3, h4, h5 {
 
 body {
   margin: 0 auto;
+  overflow-x: hidden;
 }
 main {
-  /* overflow: hidden; */
   width: 100%;
   max-width: 1023px;
   box-sizing: border-box;
